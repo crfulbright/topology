@@ -5,7 +5,8 @@
     var ctx = canvas.getContext("2d")
     var particleSystem = null
     
-    var palette = {
+    // Used for color links under Risk graph
+	var palette = {
       "Africa": "#D68300",
       "Asia": "#4D7A00",
       "Europe": "#6D87CF",
@@ -113,7 +114,7 @@
         that.redraw()
       },
 
-    	initMouseHandling:function(){
+	  initMouseHandling:function(){
         // no-nonsense drag and drop (thanks springy.js)
       	selected = null;
       	nearest = null;
