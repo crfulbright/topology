@@ -225,8 +225,29 @@
     return that.init()    
   }
   
+  // Experiment
+  // Create an XMLHttpRequest object 	
+  // http://developer.yahoo.com/javascript/howto-ajax.html#request 
+  var xmlhttp = null;
+  if (window.XMLHttpRequest) {
+    xmlhttp = new XMLHttpRequest();
+    if ( typeof xmlhttp.overrideMimeType != 'undefined') { 
+      xmlhttp.overrideMimeType('text/xml'); 
+  	}
+  } else if (window.ActiveXObject) {
+    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+  } else {
+    alert('Perhaps your browser does not support xmlhttprequests?');
+  }
   
+  // Open a connection
+  //xmlhttp.open('GET', url, true);
   
+  // 
+  //setRequestHeader()
+
+  // 
+  //xmlhttp.send(null);
   
   $(document).ready(function(){
 
